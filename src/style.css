@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+* {
+	padding: 5px;
+	margin: 0;
+	box-sizing: border-box;
+    font-family: 'Jet brains mono',sans-serif;
+}
+
+body{
+    background: #d1d1ac;
+    font-family: 'Jet brains mono', sans-serif;
+}
+
+.is{
+	font-size: 25px;
+	color: #285e28;
+	font-weight: bold;
+	padding: 10px;
+	text-align: center;
+}
+
+.iss{
+	font-size: 16px;
+	color: #061123;
+	font-weight: bold;
+	padding: 25px;
+	text-align: center;
+}
+
+.ejer1 {
+	min-width: 600px;
+	min-height: 280px;
+	margin: auto;
+	margin-top: 20px;
+	background:  #efefe8(207, 148, 219);
+	border-radius: 5px;
+	padding: 50px;
+	box-shadow: rgba(0.25, 0.25, 0.25, 0.25) 0px 1px 4px;
+	width: 300px;
+}
+.ejer1 input{
+    width: 70%;
+}
+.ejer1 .main-container{
+    display: flex;
+    align-items: center;
+}
+.ejer1 button[type="submit"] {
+	display:flex;
+	background: #6b7537;
+	font-weight: 100;
+	font-family: 'Jet brains mono', sans-serif;
+	border: none;
+	cursor:auto;
+	padding: 15px;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 18px;
+	transition: .3s ease all;
+	width: 100px;
+	height: 15px;
+	margin: auto;
+    min-width: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ejer2 {
+	min-width: 600px;
+	min-height: 250px;
+	margin: auto;
+	margin-top: 20px;
+	background:  #efefe8(207, 148, 219);
+	border-radius: 5px;
+	padding: 50px;
+	box-shadow: rgba(0.25, 0.25, 0.25, 0.25) 0px 1px 4px;
+	width: 300px;
+}
+
+.ejer2 input{
+    width: 70%;
+}
+.ejer2 .main-container{
+    display: flex;
+    align-items: center;
+}
+.ejer2 button[type="submit"] {
+	display:flex;
+	background: #6b7537;
+	font-weight: 100;
+	font-family: 'Jet brains mono', sans-serif;
+	border: none;
+	cursor:auto;
+	padding: 15px;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 18px;
+	transition: .3s ease all;
+	width: 100px;
+	height: 15px;
+	margin: auto;
+    min-width: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ejer3 {
+	min-width: 600px;
+	min-height: 320px;
+	margin: auto;
+	margin-top: 20px;
+	background:  #efefe8(207, 148, 219);
+	border-radius: 5px;
+	padding: 50px;
+	box-shadow: rgba(0.25, 0.25, 0.25, 0.25) 0px 1px 4px;
+	width: 300px;
+}
+
+.ejer3 input{
+    width: 40%;
+    flex-direction: column;
+}
+.ejer3 .main-container{
+    display: flex;
+    align-items: center;
+}
+.ejer3 button[type="submit"] {
+	display:flex;
+	background: #6b7537;
+	font-weight: 100;
+	font-family: 'Jet brains mono', sans-serif;
+	border: none;
+	cursor:auto;
+	padding: 30px;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 18px;
+	transition: .3s ease all;
+	width: 100px;
+	height: 15px;
+	margin: auto;
+    min-width: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ejer4 {
+	min-width: 600px;
+	min-height: 320px;
+	margin: auto;
+	margin-top: 20px;
+	background:  #efefe8(207, 148, 219);
+	border-radius: 5px;
+	padding: 50px;
+	box-shadow: rgba(0.25, 0.25, 0.25, 0.25) 0px 1px 4px;
+	width: 300px;
+}
+
+.ejer4 input{
+    width: 40%;
+    flex-direction: column;
+}
+.ejer4 .main-container{
+    display: flex;
+    align-items: center;
+}
+.ejer4 button[type="submit"] {
+	display:flex;
+	background: #6b7537;
+	font-weight: 100;
+	font-family: 'Jet brains mono', sans-serif;
+	border: none;
+	cursor:auto;
+	padding: 15px;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 18px;
+	transition: .3s ease all;
+	width: 200px;
+	height: 15px;
+	margin: auto;
+    min-width: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ejer5 {
+	min-width: 600px;
+	min-height: 320px;
+	margin: auto;
+	margin-top: 20px;
+	background:  #efefe8(207, 148, 219);
+	border-radius: 5px;
+	padding: 50px;
+	box-shadow: rgba(0.25, 0.25, 0.25, 0.25) 0px 1px 4px;
+	width: 300px;
+}
+
+.ejer5 input{
+    width: 40%;
+    flex-direction: column;
+}
+.ejer5 .main-container{
+    display: flex;
+    align-items: center;
+}
+.ejer5 button[type="submit"] {
+	display:flex;
+	background: #6b7537;
+	font-weight: 100;
+	font-family: 'Jet brains mono', sans-serif;
+	border: none;
+	cursor:auto;
+	padding: 15px;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 18px;
+	transition: .3s ease all;
+	width: 200px;
+	height: 15px;
+	margin: auto;
+    min-width: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ejer6 {
+	min-width: 600px;
+	min-height: 320px;
+	margin: auto;
+	margin-top: 20px;
+	background:  #efefe8(207, 148, 219);
+	border-radius: 5px;
+	padding: 50px;
+	box-shadow: rgba(0.25, 0.25, 0.25, 0.25) 0px 1px 4px;
+	width: 300px;
+}
+
+.ejer6 input{
+    width: 40%;
+    flex-direction: column;
+}
+.ejer6 .main-container{
+    display: flex;
+    align-items: center;
+}
+.ejer6 button[type="submit"] {
+	display:flex;
+	background: #6b7537;
+	font-weight: 100;
+	font-family: 'Jet brains mono', sans-serif;
+	border: none;
+	cursor:auto;
+	padding: 15px;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 18px;
+	transition: .3s ease all;
+	width: 200px;
+	height: 15px;
+	margin: auto;
+    min-width: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ejer7 {
+	min-width: 600px;
+	min-height: 320px;
+	margin: auto;
+	margin-top: 20px;
+	background:  #efefe8(207, 148, 219);
+	border-radius: 5px;
+	padding: 50px;
+	box-shadow: rgba(0.25, 0.25, 0.25, 0.25) 0px 1px 4px;
+	width: 300px;
+}
+
+.ejer7 input{
+    width: 40%;
+    flex-direction: column;
+}
+.ejer7 .main-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.ejer7 .containerSalAum{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ejer7 button[type="submit"] {
+	display:flex;
+	background: #6b7537;
+	font-weight: 100;
+	font-family: 'Jet brains mono', sans-serif;
+	border: none;
+	cursor:auto;
+	padding: 15px;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 18px;
+	transition: .3s ease all;
+	width: 200px;
+	height: 15px;
+	margin: auto;
+    min-width: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ejer8 {
+	min-width: 600px;
+	min-height: 320px;
+	margin: auto;
+	margin-top: 20px;
+	background:  #efefe8(207, 148, 219);
+	border-radius: 5px;
+	padding: 50px;
+	box-shadow: rgba(0.25, 0.25, 0.25, 0.25) 0px 1px 4px;
+	width: 300px;
+}
+
+.ejer8 input{
+    width: 40%;
+    flex-direction: column;
+}
+.ejer8 .main-container{
+    display: flex;
+    align-items: center;
+}
+.ejer8 button[type="submit"] {
+	display:flex;
+	background: #6b7537;
+	font-weight: 100;
+	font-family: 'Jet brains mono', sans-serif;
+	border: none;
+	cursor:auto;
+	padding: 15px;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 18px;
+	transition: .3s ease all;
+	width: 200px;
+	height: 15px;
+	margin: auto;
+    min-width: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ejer9 {
+	min-width: 600px;
+	min-height: 320px;
+	margin: auto;
+	margin-top: 20px;
+	background:  #efefe8(207, 148, 219);
+	border-radius: 5px;
+	padding: 50px;
+	box-shadow: rgba(0.25, 0.25, 0.25, 0.25) 0px 1px 4px;
+	width: 300px;
+}
+
+.ejer9 input{
+    width: 40%;
+    flex-direction: column;
+}
+.ejer9 .main-container{
+    display: flex;
+    align-items: center;
+}
+.ejer9 button[type="submit"] {
+	display:flex;
+	background: #6b7537;
+	font-weight: 100;
+	font-family: 'Jet brains mono', sans-serif;
+	border: none;
+	cursor:auto;
+	padding: 15px;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 18px;
+	transition: .3s ease all;
+	width: 200px;
+	height: 15px;
+	margin: auto;
+    min-width: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px, 0px, 30px;
+}
+
+.table{
+    display: flex;
+    justify-content: center;
+    background-color:#dcd8a2;
+}
+
+.ejer11 {
+	min-width: 600px;
+	min-height: 320px;
+	margin: auto;
+	margin-top: 20px;
+	background:  #efefe8(207, 148, 219);
+	border-radius: 5px;
+	padding: 50px;
+	box-shadow: rgba(0.25, 0.25, 0.25, 0.25) 0px 1px 4px;
+	width: 300px;
+}
+
+.ejer11 input{
+    width: 40%;
+    flex-direction: column;
+}
+.ejer11 .main-container{
+    display: flex;
+    align-items: center;
+}
+.ejer11 button[type="submit"] {
+	display:flex;
+	background: #6b7537;
+	font-weight: 100;
+	font-family: 'Jet brains mono', sans-serif;
+	border: none;
+	cursor:auto;
+	padding: 15px;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 18px;
+	transition: .3s ease all;
+	width: 200px;
+	height: 15px;
+	margin: auto;
+    min-width: 40px;
+    justify-content: center;
+    align-items: center;
+}
