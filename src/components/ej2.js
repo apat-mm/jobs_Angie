@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export const Punto2 = () => {
+export const Llamada = () => {
     var tarifa = 100
     const calcularTarifa = (Mins) => {
         let i = 0
@@ -38,7 +38,7 @@ export const Punto2 = () => {
     <>
     <div className="ejer2">
     <h1 className="is">COSTO LLAMADA    </h1>
-    <p>Ingrese la duración de la llamada</p>
+    <p className="iss2">Ingrese la duración de la llamada</p>
     <div className="main-container">
     <input type="number" value={Mins} onChange={(event) => onMins(event) }/>
     <button onClick={() => calcularTiempo(Mins)} type="submit">Calcular</button>

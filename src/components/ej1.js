@@ -27,14 +27,14 @@ export const SecondsToFromated = () => {
         <>
             <div className="ejer1">
                 <h1 className="is">Conversor de segundos a formato HH:MM:SS</h1>
-                <p>Ingrese la cantidad de segundos que desea convertir: </p>
+                <p className="iss2">Ingrese la cantidad de segundos que desea convertir: </p>
                 <div className="main-container">
                     <input onChange={handleOnChange}
-                        type="text"></input>
+                        type="number"></input>
                     <button onClick={returnFormatedTime} type="submit"> Convetir </button>
                 </div>
 
-                <h3 className="iss"> La conversión de los segundo ingresados en formato HH:MM:SS es: {mensaje} </h3>
+                <h3 className="iss"> La conversión de los segundo ingresados en formato Horas/Mins/Segs es: {mensaje} </h3>
             </div>
         </>
     )

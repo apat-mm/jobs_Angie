@@ -1,45 +1,43 @@
 import { useState } from "react";
-const Ejercicio5 = () => {
+const ListNums = () => {
 
-    var arregloprincipal = new Array()
+    var array = new Array()
 
     const llenarArreglo = (a) => {
         for(let i=0; i <= a; i++){
-            arregloprincipal[i] = i
+            array[i] = i
         
         }
-        return(arregloprincipal)
+        return(array)
     }
     
 
     const [valor, setValor] = useState(0);
     const [arregloCompleto, setArregloCompleto] = useState("")
 
-    const obtenerValor = (evt) => {
+    const onNum = (evt) => {
         setValor(evt.target.value)
     }
    
 
-    const Arreglo = (a) => {
+    const List = (a) => {
         setArregloCompleto(llenarArreglo(a))
         
-    }
-   
+    }  
    
     return(
         <>
             <div className="ejer5">
-                <h1 className="is">Ejercicio 5</h1>
-                <p>Hasta que valor quieres que llegue el arreglo:</p>
-                <input 
-                    type="number" 
-                    value={valor} onChange={(event) => obtenerValor(event) }
-                />
-                <button onClick={() => Arreglo(valor)} type="submit">Analizar lista</button>
-                <p className="iss"> La sucesion de numeros completa es: {arregloCompleto.toString()}</p>
+                <h1 className="is">LISTA ORDENADA</h1>
+                <p className="iss2">Digite el número límite de la lista: </p>
+                <div className="main-container">
+                <input type="number" value={valor} onChange={(event) => onNum(event) }/>
+                <button onClick={() => List(valor)} type="submit">Ver lista</button>
+                </div>
+                <p className="iss"> Lista de números ordenados: {arregloCompleto.toString()}</p>
             </div>
         </>
     )
 };
 
-export default Ejercicio5
+export default ListNums

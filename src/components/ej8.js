@@ -1,28 +1,31 @@
 import { useState } from "react";
+import swal from "sweetalert";
 
-const Punto8 = () => {
-    var arregloprincipal = new Array()
-    var arregloDividido = new Array()
+const Division = () => {
+    var array = new Array()
+    var arrayDivid = new Array()
     var numero;
 
-    const LlenarArreglo = () => {
+    const FullArray = () => {
         for(let i=0; i <= 9; i++){
-            arregloprincipal[i] = Math.floor(Math.random()*100)
+            array[i] = Math.floor(Math.random()*100)
 
         }
-        return(arregloprincipal)
+        return(array)
     }
 
-    const DividirPorValor = (a) => {
+    const Dividir = (a) => {
         if(a <= 9 && a> -1) {
-            numero = arregloprincipal[a]
-            for(let j=0; j < arregloprincipal.length; j++){
-                arregloDividido[j] = (arregloprincipal[j] / numero).toFixed(4)
+            numero = array[a]
+            for(let j=0; j < array.length; j++){
+                arrayDivid[j] = (array[j] / numero).toFixed(4)
             }
-            return (arregloDividido)
+            return (arrayDivid)
         } else {
-            alert("El valor Digitado debe ser un valor entre 0 y 9")
-            setDivision("El valor Digitado debe ser un valor entre 0 y 9")
+            swal({text:"El número digitado debe estar entre 0 y 9",
+                  icon:"warning",
+                  button:"Ok"})
+            setArrayDividido("El valor Digitado debe ser un valor entre 0 y 9")
             return("El valor Digitado debe ser un valor entre 0 y 9")
 
         }   
@@ -30,8 +33,8 @@ const Punto8 = () => {
     }
 
     const [valor, setValor] = useState(0);
-    const [arregloCompleto, setArregloCompleto] = useState("En esta linea veras la lista aleatoria")
-    const [arrayOperado, setDivision] = useState("En esta linea veras la lista operada")
+    const [ArrayComplete, setArrayComplete] = useState("")
+    const [ArrayDividido, setArrayDividido] = useState("")
 
     const obtenerValor = (evt) => {
         setValor(evt.target.value)
@@ -39,8 +42,8 @@ const Punto8 = () => {
    
 
     const Arreglo = () => {
-        setArregloCompleto(LlenarArreglo())
-        setDivision(DividirPorValor(valor))
+        setArrayComplete(FullArray())
+        setArrayDividido(Dividir(valor))
        
     }
 
@@ -49,14 +52,14 @@ const Punto8 = () => {
     return(
     <>
     <div className="ejer8">
-    <h1 className="is">Lista aleatorio y dividir cada elemento</h1>
+    <h1 className="is">DIVISIÓN POSICIÓN</h1>
     <p>Digita la posición del valor en la lista: </p>
     <div className="main-container">
     <input type="number" value={valor} onChange={(event) => obtenerValor(event) }/>
-    <button onClick={() => Arreglo(valor)} type="submit">Generar Lista aleatoria y divida</button>
+    <button onClick={() => Arreglo(valor)} type="submit">Generar lista y división</button>
     </div>
-    <p className="iss"> Lista de numeros aleatorios: {arregloCompleto.toString()}</p>
-    <p className="iss"> Divididos por el puesto {valor}: {arrayOperado.toString()} </p>
+    <p className="iss"> Lista: {ArrayComplete.toString()}</p>
+    <p className="iss"> Divididos por posición {valor}: {ArrayDividido.toString()} </p>
     
     </div>
     </>
@@ -65,4 +68,4 @@ const Punto8 = () => {
     
 }
 
-export default Punto8
+export default Division

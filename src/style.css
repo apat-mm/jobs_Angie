@@ -28,6 +28,13 @@ body{
 	text-align: center;
 }
 
+.issp{
+	font-size: 16px;
+	color: #061123;
+	padding: 15px;
+	text-align: center;
+}
+
 .ejer1 {
 	min-width: 600px;
 	min-height: 280px;
@@ -78,6 +85,12 @@ body{
 	width: 300px;
 }
 
+.iss2{
+	font-size: 16px;
+	color: #061123;
+	padding: 15px
+}
+
 .ejer2 input{
     width: 70%;
 }
@@ -118,12 +131,20 @@ body{
 }
 
 .ejer3 input{
-    width: 40%;
+    width: 300px;
     flex-direction: column;
+    justify-content: center;
 }
 .ejer3 .main-container{
     display: flex;
+    flex-direction: column;
     align-items: center;
+}
+.ejer3 .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 .ejer3 button[type="submit"] {
 	display:flex;
@@ -132,7 +153,7 @@ body{
 	font-family: 'Jet brains mono', sans-serif;
 	border: none;
 	cursor:auto;
-	padding: 30px;
+	padding: 20px;
 	border-radius: 10px;
 	color: #fff;
 	font-size: 18px;
@@ -158,13 +179,15 @@ body{
 }
 
 .ejer4 input{
-    width: 40%;
+    width: 98%;
     flex-direction: column;
 }
 .ejer4 .main-container{
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
+
 .ejer4 button[type="submit"] {
 	display:flex;
 	background: #6b7537;
@@ -180,7 +203,7 @@ body{
 	width: 200px;
 	height: 15px;
 	margin: auto;
-    min-width: 40px;
+    min-width: 60px;
     justify-content: center;
     align-items: center;
 }
@@ -198,12 +221,13 @@ body{
 }
 
 .ejer5 input{
-    width: 40%;
+    width: 50%;
     flex-direction: column;
 }
 .ejer5 .main-container{
     display: flex;
     align-items: center;
+    flex-direction: center;
 }
 .ejer5 button[type="submit"] {
 	display:flex;
@@ -217,7 +241,7 @@ body{
 	color: #fff;
 	font-size: 18px;
 	transition: .3s ease all;
-	width: 200px;
+	width: 100px;
 	height: 15px;
 	margin: auto;
     min-width: 40px;
@@ -238,7 +262,7 @@ body{
 }
 
 .ejer6 input{
-    width: 40%;
+    width: 50%;
     flex-direction: column;
 }
 .ejer6 .main-container{
@@ -257,7 +281,7 @@ body{
 	color: #fff;
 	font-size: 18px;
 	transition: .3s ease all;
-	width: 200px;
+	width: 170px;
 	height: 15px;
 	margin: auto;
     min-width: 40px;
@@ -278,7 +302,7 @@ body{
 }
 
 .ejer7 input{
-    width: 40%;
+    width: 100%;
     flex-direction: column;
 }
 .ejer7 .main-container{
@@ -326,7 +350,7 @@ body{
 }
 
 .ejer8 input{
-    width: 40%;
+    width: 50%;
     flex-direction: column;
 }
 .ejer8 .main-container{
@@ -340,12 +364,12 @@ body{
 	font-family: 'Jet brains mono', sans-serif;
 	border: none;
 	cursor:auto;
-	padding: 15px;
+	padding: 20px;
 	border-radius: 10px;
 	color: #fff;
 	font-size: 18px;
 	transition: .3s ease all;
-	width: 200px;
+	width: 160px;
 	height: 15px;
 	margin: auto;
     min-width: 40px;
@@ -366,13 +390,21 @@ body{
 }
 
 .ejer9 input{
-    width: 40%;
+    width: 300px;
     flex-direction: column;
+    justify-content: center;
 }
 .ejer9 .main-container{
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
+.ejer9 .butt{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
 .ejer9 button[type="submit"] {
 	display:flex;
 	background: #6b7537;
@@ -385,7 +417,7 @@ body{
 	color: #fff;
 	font-size: 18px;
 	transition: .3s ease all;
-	width: 200px;
+	width: 130px;
 	height: 15px;
 	margin: auto;
     min-width: 40px;
@@ -413,13 +445,21 @@ body{
 }
 
 .ejer11 input{
-    width: 40%;
+    width: 100%;
     flex-direction: column;
 }
 .ejer11 .main-container{
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
+.ejer11 .buttEst{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: center;
+}
+
 .ejer11 button[type="submit"] {
 	display:flex;
 	background: #6b7537;
@@ -432,10 +472,10 @@ body{
 	color: #fff;
 	font-size: 18px;
 	transition: .3s ease all;
-	width: 200px;
-	height: 15px;
+	width: 300px;
+	height: 20px;
 	margin: auto;
-    min-width: 40px;
+    min-width: 200px;
     justify-content: center;
     align-items: center;
 }

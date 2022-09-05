@@ -3,23 +3,23 @@ import { useState } from "react";
 export const Saludo = () => {
     const calcularHora = (hora) => {
         let mensaje;
-        let verdaderaHora = Math.abs(hora)
-        verdaderaHora = Math.round(verdaderaHora)
+        let HoraA = Math.abs(hora)
+        HoraA = Math.round(HoraA)
         
-        if (verdaderaHora < 12 || verdaderaHora === 0 || verdaderaHora === 24){
-            mensaje = "Buenas Dias"
-        } else if ((12 < verdaderaHora) && (verdaderaHora < 18) || (verdaderaHora === 12)){
+        if (HoraA < 12 || HoraA === 0 || HoraA === 24){
+            mensaje = "Buenos Dias"
+        } else if ((12 < HoraA) && (HoraA < 18) || (HoraA === 12)){
             mensaje = "Buenas Tardes"
-        } else if ((18 < verdaderaHora) && (verdaderaHora <= 23)){
+        } else if ((18 < HoraA) && (HoraA <= 23)){
             mensaje = "Buenas Noches"
         } else{
-            mensaje = "El valor ingresado puede no ser en formato 24 horas"
+            mensaje = "El valor ingresado no es considerado como hora"
         }
         return (mensaje)
         }
 
     const [horas, setTiempo] = useState(0);
-    const [mensaje, setMensaje] = useState("Por favor, ingresar la hora en formato de 24 horas")
+    const [mensaje, setMensaje] = useState("")
     const [nombre, setNombre] = useState("")
 
 
@@ -39,17 +39,19 @@ export const Saludo = () => {
     <>
     <div className="ejer3">
     <h1 className="is">SALUDO!!</h1>
+    <p className="iss">Ingrese la hora en formato militar Ej:15 para indicar 5pm</p>
     <div className="main-container">
+    <div className="right">
     <p>Digite su nombre</p>
-    <input type="text" value={nombre} onChange={(event) => obtenernombre(event) }/>
-    </div>
-    <div className="main-container">
+    <input type="text" value={nombre} placeholder="Nombre..." onChange={(event) => obtenernombre(event) }/>
     <p>Digite la hora</p>
     <input type="number" value={horas} onChange={(event) => obtenerSegundos(event) }/> 
-    <button onClick={() => calcularTiempo(horas)} type="submit">Realizar Saludo</button>
     </div>
-    <p className="iss"> {mensaje} {nombre}</p>
-    
+    <div className="button">
+    <button onClick={() => calcularTiempo(horas)} type="submit">Saludame</button>
+    </div>
+    </div>
+    <p className="iss"> Hola {nombre} {mensaje}</p>
     </div>
     </>
     )

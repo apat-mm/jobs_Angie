@@ -1,25 +1,25 @@
 import { useState } from "react";
 
-export const Ejercicio6 = () => {
+export const Impares = () => {
 
-    var arregloprincipal = new Array()
-    var arregloImpar = new Array()
+    var array = new Array()
+    var arrayI = new Array()
 
     const llenarArreglo = (a) => {
         for(let i=0; i <= a; i++){
-            arregloprincipal[i] = i
+            array[i] = i
         
         }
-        return(arregloprincipal)
+        return(array)
     }
 
     const identificarImpares = () => {   
-        for(let j=0; j <= arregloprincipal.length - 1; j++){
-            if(arregloprincipal[j] % 2 != 0){
-                arregloImpar[j] = j
+        for(let j=0; j <= array.length - 1; j++){
+            if(array[j] % 2 != 0){
+                arrayI[j] = j
             }
         }
-        return (arregloImpar)
+        return (arrayI)
         }
     
 
@@ -27,12 +27,12 @@ export const Ejercicio6 = () => {
     const [arregloCompleto, setArregloCompleto] = useState("")
     const [todosLosimpares, setArregloimpares] = useState("")
 
-    const obtenerValor = (evt) => {
+    const onNum = (evt) => {
         setValor(evt.target.value)
     }
    
 
-    const Arreglo = (a) => {
+    const List = (a) => {
         setArregloCompleto(llenarArreglo(a))
         setArregloimpares(identificarImpares())
         
@@ -41,15 +41,14 @@ export const Ejercicio6 = () => {
     return(
         <>
             <div className="ejer6">
-                <h1 className="is">Ejercicio 6</h1>
-                <p>Hasta que valor quieres que llegue el arreglo:</p>
-                <input 
-                    type="number" 
-                    value={valor} onChange={(event) => obtenerValor(event) }
-                />
-                <button onClick={() => Arreglo(valor)} type="submit">Analizar impares</button>
-                <p className="iss"> La sucesion de numeros completa es: {arregloCompleto.toString()}</p>
-                <p className="iss"> Los numeros impares son: {todosLosimpares.toString()} </p>
+                <h1 className="is">LISTA ORDENADA CON N° IMPARES</h1>
+                <p className="iss2">Hasta que valor quieres que llegue el arreglo: </p>
+                <div className="main-container">
+                <input type="number" value={valor} onChange={(event) => onNum(event)}/>
+                <button onClick={() => List(valor)} type="submit">Analizar impares</button>
+                </div>
+                <p className="iss"> Lista de números ordenados: {arregloCompleto.toString()}</p>
+                <p className="iss"> Números impares de la lista anterior: {todosLosimpares.toString()} </p>
             </div>
         </>
     )

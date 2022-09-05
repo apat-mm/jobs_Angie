@@ -1,30 +1,30 @@
 import { useState } from "react";
 import swal from 'sweetalert'
 
-const categories =[]
-const Ejercicio7=()=>{
+const salarios =[]
+const Salarios=()=>{
     
-    const [cat, setCat] = useState('')
-    const [cats, setCats] = useState( categories)
-    const [SalarioAum, setSalarioAum] = useState (cats)
+    const [Sal, setSal] = useState('')
+    const [Sals, setSals] = useState( salarios )
+    const [SalarioAum, setSalarioAum] = useState (Sals)
 
-    const onCatChan = (evt) => {
-        setCat( evt.target.value)
+    const onInputSal = (evt) => {
+        setSal( evt.target.value)
     }
-    const onAddCats = () => {
-        setCats([...cats, cat])
+    const onAddSals = () => {
+        setSals([...Sals, Sal])
     }
 
     const onSalAum = () => {
-            setSalarioAum(cats)
+            setSalarioAum(Sals)
     }
     
     const error = () => {
-        if(cats.length < 10){
+        if(Sals.length < 10){
             swal({text:"Debe de ingresar 10 salarios exactamente",
                   icon:"warning",
                   button:"Ok"})}
-            else if (cats.length > 10){
+            else if (Sals.length > 10){
                 swal({text:"Ya excedió el límite de salarios permitidos, comience de nuevo",
                       icon:"warning",
                       button:"Ok"})}
@@ -33,24 +33,26 @@ const Ejercicio7=()=>{
     return(
         <>
         <div className="ejer7">
-        <h1 className="is">Salarios con y sin aumento</h1>
-        <label>
-            Ingrese los salarios: 
-            <input onChange={(event) => onCatChan(event)} type='text'write='Salarios...' value={cat}/>
-            <div className="main-container">
-            <button onClick={ () => onAddCats()} type="submit"> Añadir </button>
-            <button onClick={ () => error()} type="submit"> Aumento del 8% </button>
-            </div>
-        </label>
+        <h1 className="is">SALARIOS Y AUMENTOS</h1>
+        <p className="iss2">Ingrese los 10 salarios de los que desea conocer su aumento: </p>
+        <div className="main-contrainer">
+        <input onChange={(event) => onInputSal(event)} type='text'placeholder='Salarios...' value={Sal}/>
+        <br/>
+        <br/>
+        </div>
+        <div className="main-container">
+        <button onClick={ () => onAddSals()} type="submit"> Añadir </button>
+        <button onClick={ () => error()} type="submit"> Aumento del 8% </button>
+        </div>
         <div className="main-container">
         <div className="containerSal">
         <h3>Salarios</h3>
         <ol>
             {
-                cats.map(
-                    (category,key)=>
+                Sals.map(
+                    (i,key)=>
                     {
-                        return<li key={key}>{category}</li>}
+                        return<li key={key}>{i}</li>}
                 )
             }
         </ol>
@@ -60,8 +62,8 @@ const Ejercicio7=()=>{
         <ol>
             {
                 SalarioAum.map(
-                    (i,key)=> {
-                        return<li key={key}>{parseInt(i) + i * 0.08}</li>}
+                    (j,key)=> {
+                        return<li key={key}>{parseInt(j) + j * 0.08}</li>}
                 )
             }
         </ol>
@@ -71,4 +73,4 @@ const Ejercicio7=()=>{
         </>
     )
 }
-export default Ejercicio7;
+export default Salarios;
