@@ -20,6 +20,13 @@ body{
 	text-align: center;
 }
 
+.is2{
+	font-size: 22px;
+	color: #285e28;
+	font-weight: bold;
+	padding: 10px;
+}
+
 .iss{
 	font-size: 16px;
 	color: #061123;
@@ -32,6 +39,12 @@ body{
 	font-size: 16px;
 	color: #061123;
 	padding: 15px;
+	text-align: center;
+}
+
+.issn{
+	font-size: 16px;
+	color: #061123;
 	text-align: center;
 }
 
@@ -450,14 +463,14 @@ body{
 }
 .ejer11 .main-container{
     display: flex;
+	flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
+
 .ejer11 .buttEst{
-    display: flex;
-    flex-direction: column;
-    justify-content:flex-end;
-    align-items: center;
+	display: flex;
+	flex-direction: row;
 }
 
 .ejer11 button[type="submit"] {
@@ -472,10 +485,104 @@ body{
 	color: #fff;
 	font-size: 18px;
 	transition: .3s ease all;
-	width: 300px;
 	height: 20px;
 	margin: auto;
-    min-width: 200px;
+    min-width: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.chall1 {
+	min-width: 600px;
+	min-height: 100px;
+	margin: auto;
+	margin-top: 20px;
+	background:  #efefe8(207, 148, 219);
+	border-radius: 5px;
+	padding: 50px;
+	box-shadow: rgba(0.25, 0.25, 0.25, 0.25) 0px 1px 4px;
+	width: 300px;
+}
+
+.chall2 {
+	min-width: 600px;
+	margin: auto;
+	margin-top: 20px;
+	background:  #efefe8(207, 148, 219);
+	border-radius: 5px;
+	padding: 50px;
+	box-shadow: rgba(0.25, 0.25, 0.25, 0.25) 0px 1px 4px;
+	width: 300px;
+}
+
+.chall2 .main-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.count{
+	font-size: 30px;
+	color: #352911;
+	font-weight: bold;
+	padding: 10px;
+	text-align: center;
+}
+
+.chall2 button[type="submit"] {
+	display:flex;
+	background: #6b7537;
+	font-weight: 100;
+	font-family: 'Jet brains mono', sans-serif;
+	border: none;
+	cursor:auto;
+	padding: 15px;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 18px;
+	transition: .3s ease all;
+	width: 100px;
+	height: 20px;
+	margin: auto;
+    min-width: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.chall3 {
+	min-width: 600px;
+	min-height: 280px;
+	margin: auto;
+	margin-top: 20px;
+	background:  #efefe8(207, 148, 219);
+	border-radius: 5px;
+	padding: 50px;
+	box-shadow: rgba(0.25, 0.25, 0.25, 0.25) 0px 1px 4px;
+	width: 300px;
+}
+
+.chall3 .main-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.chall3 button[type="submit"] {
+	display:flex;
+	background: #6b7537;
+	font-weight: 100;
+	font-family: 'Jet brains mono', sans-serif;
+	border: none;
+	cursor:auto;
+	padding: 15px;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 18px;
+	transition: .3s ease all;
+	width: 100px;
+	height: 20px;
+	margin: auto;
+    min-width: 10px;
     justify-content: center;
     align-items: center;
 }

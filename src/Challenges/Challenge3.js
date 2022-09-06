@@ -13,13 +13,14 @@ export const Challenge_3 =()=>{
     }
     return(
         <>
-        <h1>Challenge 3</h1>
-        <label>
-            write some text:
+        <div className="chall3">
+        <h1 className="is">CHALLENGE 3</h1>
+        <p>Escribe lo que desees agregar a la lista: </p> 
+        <div className="main-container">
             <input onChange={(event) => onCatChan(event)} type='text'write='write some text' value={cat}/>
-            <button onClick={ () => onAddCats()}> Add </button>
-        </label>
-        <h1>List</h1>
+            <button onClick={ () => onAddCats()} type="submit"> Add </button>
+        </div>
+        <h2 className="is2">Lista</h2>
         <ol>
             {
                 cats.map(
@@ -29,6 +30,7 @@ export const Challenge_3 =()=>{
                 )
             }
         </ol>
+        </div>
         </>
     )
 }
